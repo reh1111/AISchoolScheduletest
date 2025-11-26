@@ -116,9 +116,6 @@ def generate_schedule(api_key, days, classes, teachers, rooms, curriculum, const
 # --- ЛОГИКА ПРИЛОЖЕНИЯ ---
 
 if generate_btn:
-    if not api_key:
-        st.error("❌ Пожалуйста, введите API ключ (в коде или в боковой панели).")
-    else:
         with st.spinner(
                 '⏳ ИИ анализирует нагрузку, проверяет кабинеты и строит расписание... Это может занять до 30 секунд.'):
             try:
